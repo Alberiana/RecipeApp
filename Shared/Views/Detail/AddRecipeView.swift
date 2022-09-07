@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct AddRecipeView: View {
+    @EnvironmentObject var recipesVM: RecipesViewModel
+    
     @State private var name: String=""
     @State private var selectedCategory: Category = Category.yellow
     @State private var description: String=""
     @State private var ingredients: String=""
     @State private var directions: String=""
+    @State private var navigateToRecipe=false
     
     @Environment(\.dismiss) var dismiss
 
@@ -60,28 +63,39 @@ struct AddRecipeView: View {
                     }
                 }
 
-                    ToolbarItem{
-                        Button {
-                            
-                        } label: {
-                            Label("Done", systemImage: "checkmark")
-                                .labelStyle(.iconOnly)
+                ToolbarItem{
+                        NavigationLink(isActive: $navigateToRecipe) {
+                            RecipeView(recipe: recipesVM.recipes.sorted{$0.datePublished>$1.datePublished}[0])
+                                .navigationBarBackButtonHidden(true)
+                        } label:{
+                            Button{
+                                navigateToRecipe=true
+                            } label:{
+                                Label("Done", systemImage: "checkmark")
+                                    .labelStyle(.iconOnly)
+                            }
+                        
                         }
                         .disabled(name.isEmpty)
                 }
             })
+        
             .navigationTitle("New Recipe")
             .navigationBarTitleDisplayMode(.inline)
         }
         .navigationViewStyle(.stack)
+        
     }
 }
+
 
 struct AddRecipeView_Previews: PreviewProvider {
     static var previews: some View {
         AddRecipeView()
     }
+
+    
+    
 }
-                     
                      
                      
