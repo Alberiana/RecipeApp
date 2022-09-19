@@ -12,9 +12,9 @@ struct RecipeAppApp: App {
     @StateObject var recipesViewModel = RecipesViewModel()
     
     var body: some Scene {
-        WindowGroup {
+        WindowGroup{
             ContentView()
-                .environmentObject(RecipesViewModel)
+                .environmentObject(recipesViewModel)
         }
     }
 }

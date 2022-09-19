@@ -33,7 +33,6 @@ struct AddRecipeView: View {
                                 .tag(category)
                         }
                     }
-                    //e vendos by default vleren
                     .pickerStyle(.menu)
                     
                 }
@@ -55,7 +54,7 @@ struct AddRecipeView: View {
             
             .toolbar(content: {
                 ToolbarItem(placement: .navigationBarLeading){
-                    Button {
+                    Button { 
                         dismiss()
                     } label: {
                         Label("Cancle", systemImage: "xmark")
@@ -69,6 +68,7 @@ struct AddRecipeView: View {
                                 .navigationBarBackButtonHidden(true)
                         } label:{
                             Button{
+                                saveRecipe()
                                 navigateToRecipe=true
                             } label:{
                                 Label("Done", systemImage: "checkmark")
@@ -79,7 +79,6 @@ struct AddRecipeView: View {
                         .disabled(name.isEmpty)
                 }
             })
-        
             .navigationTitle("New Recipe")
             .navigationBarTitleDisplayMode(.inline)
         }
@@ -92,10 +91,21 @@ struct AddRecipeView: View {
 struct AddRecipeView_Previews: PreviewProvider {
     static var previews: some View {
         AddRecipeView()
+            .environmentObject(RecipesViewModel())
+        
     }
-
-    
-    
 }
-                     
+extension AddRecipeView{
+    private func saveRecipe(){
+        let now=Date()
+
+        let dateFormatter=DateFormatter()
+        dateFormatter.dateFormat="yyyy-mm-dd"
+
+        let datepPublished=dateFormatter.string(from: now)
+        print(datepPublished)
+        let recipe = Recipe(name: name, image: "", description: description, ingredients: ingredients, directions: directions, category:selectedCategory.rawValue, datePublished: "")
+        recipesVM.addRecipe(recipe: recipe)
+    }
+}
                      

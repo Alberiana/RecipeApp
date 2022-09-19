@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E6BBD6928C95247004AE0AA /* RecipeIngredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6BBD6828C95247004AE0AA /* RecipeIngredients.swift */; };
+		0E6BBD6A28C95247004AE0AA /* RecipeIngredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6BBD6828C95247004AE0AA /* RecipeIngredients.swift */; };
 		0E91B58128C2CBB900C63D59 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91B58028C2CBB900C63D59 /* Tests_iOS.swift */; };
 		0E91B58328C2CBB900C63D59 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91B58228C2CBB900C63D59 /* Tests_iOSLaunchTests.swift */; };
 		0E91B58D28C2CBB900C63D59 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91B58C28C2CBB900C63D59 /* Tests_macOS.swift */; };
@@ -62,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E6BBD6828C95247004AE0AA /* RecipeIngredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredients.swift; sourceTree = "<group>"; };
 		0E91B56828C2CBB700C63D59 /* RecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppApp.swift; sourceTree = "<group>"; };
 		0E91B56928C2CBB700C63D59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E91B56A28C2CBB900C63D59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -211,6 +214,7 @@
 				0E91B5D328C4C76700C63D59 /* RecipeView.swift */,
 				0E91B5D628C4D81D00C63D59 /* CategoryView.swift */,
 				0E91B5D928C4DBAC00C63D59 /* AddRecipeView.swift */,
+				0E6BBD6828C95247004AE0AA /* RecipeIngredients.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -404,6 +408,7 @@
 				0E91B5B928C2D6D500C63D59 /* NewRecipeView.swift in Sources */,
 				0E91B5BC28C2D6E500C63D59 /* FavoritesView.swift in Sources */,
 				0E91B5C428C2DA7300C63D59 /* TabBar.swift in Sources */,
+				0E6BBD6928C95247004AE0AA /* RecipeIngredients.swift in Sources */,
 				0E91B5D728C4D81D00C63D59 /* CategoryView.swift in Sources */,
 				0E91B5C128C2D70800C63D59 /* SettingView.swift in Sources */,
 				0E91B5D428C4C76700C63D59 /* RecipeView.swift in Sources */,
@@ -421,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E91B5DB28C4DBAC00C63D59 /* AddRecipeView.swift in Sources */,
+				0E6BBD6A28C95247004AE0AA /* RecipeIngredients.swift in Sources */,
 				0E91B5B728C2D6C300C63D59 /* CategoriesView.swift in Sources */,
 				0E91B5CF28C4240700C63D59 /* RecipeCard.swift in Sources */,
 				0E91B5BA28C2D6D500C63D59 /* NewRecipeView.swift in Sources */,
@@ -587,6 +593,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2JCU8KMU7P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -616,6 +623,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2JCU8KMU7P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
