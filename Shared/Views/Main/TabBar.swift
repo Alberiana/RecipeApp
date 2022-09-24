@@ -26,11 +26,11 @@ struct TabBar: View {
                 .tabItem{
                     Label("Favorites", systemImage: "heart")
                 }
-            SettingView()
-                .tabItem{
-                    Label("Setting", systemImage: "gear")
-                }
-            
+//            SettingView()
+//                .tabItem{
+//                    Label("Setting", systemImage: "gear")
+//                }
+//
         }
     }
 }
