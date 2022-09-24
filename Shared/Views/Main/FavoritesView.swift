@@ -7,14 +7,19 @@
 
 import SwiftUI
 
+
 struct FavoritesView: View {
+    var titles=["Yellow Cake", "White Cake", "Black Cake"]
     var body: some View {
         NavigationView{
-            Text("You havent saved any recipe to your favorites yet")
-                .padding()
-            .navigationTitle("Favorites View")
+            List(0..<titles.count){index in
+                HStack{
+                    Image(self.titles[index]).resizable().frame(width: 60, height:60)
+                    Text(self.titles[index])
+                }
+            }
+            .navigationTitle("Favorites Recipe")
         }
-        .navigationViewStyle(.stack)
     }
 }
 
