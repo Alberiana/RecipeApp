@@ -25,7 +25,6 @@ struct AddRecipeView: View {
                 Section(header: Text("Name")){
                     TextField("Recipe Name", text: $name )
                 }
-                
                 Section(header: Text("Category")){
                     Picker("Category", selection: $selectedCategory){
                         ForEach(Category.allCases){category in
@@ -86,7 +85,6 @@ struct AddRecipeView: View {
         
     }
 }
-
 
 struct AddRecipeView_Previews: PreviewProvider {
     static var previews: some View {

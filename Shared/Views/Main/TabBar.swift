@@ -18,14 +18,16 @@ struct TabBar: View {
                 .tabItem{
                     Label("Categories", systemImage: "square.fill.text.grid.1x2")
                 }
-            AddRecipeView()
-                .tabItem{
-                    Label("New", systemImage: "plus")
-                }
             FavoritesView()
                 .tabItem{
                     Label("Favorites", systemImage: "heart")
                 }
+            
+            AddRecipeView()
+                .tabItem{
+                    Label("New", systemImage: "plus")
+                }
+           
 //            SettingView()
 //                .tabItem{
 //                    Label("Setting", systemImage: "gear")
@@ -34,8 +36,6 @@ struct TabBar: View {
         }
     }
 }
-
-
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar()

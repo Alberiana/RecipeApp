@@ -10,17 +10,11 @@ import SwiftUI
 struct CategoryView: View {
     
     @EnvironmentObject var recipesVM: RecipesViewModel
-    
     var category: Category
-    
     var recipes: [Recipe]{
         return recipesVM.recipes.filter{$0.category==category.rawValue}
     }
     var body: some View {
-        
-        //Computed property
-        
-     
         ScrollView{
             RecipeList(recipes: recipes)
         }
