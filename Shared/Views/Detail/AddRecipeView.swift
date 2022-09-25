@@ -33,7 +33,6 @@ struct AddRecipeView: View {
                         }
                     }
                     .pickerStyle(.menu)
-                    
                 }
                 Section(header: Text("Description")){
                     TextEditor(text: $description)
@@ -60,7 +59,6 @@ struct AddRecipeView: View {
                             .labelStyle(.iconOnly)
                     }
                 }
-
                 ToolbarItem{
                         NavigationLink(isActive: $navigateToRecipe) {
                             RecipeView(recipe: recipesVM.recipes.sorted{$0.datePublished>$1.datePublished}[0])
@@ -73,7 +71,6 @@ struct AddRecipeView: View {
                                 Label("Done", systemImage: "checkmark")
                                     .labelStyle(.iconOnly)
                             }
-                        
                         }
                         .disabled(name.isEmpty)
                 }
@@ -100,8 +97,8 @@ extension AddRecipeView{
         let dateFormatter=DateFormatter()
         dateFormatter.dateFormat="yyyy-mm-dd"
 
-        let datepPublished=dateFormatter.string(from: now)
-        print(datepPublished)
+        let datePublished=dateFormatter.string(from: now)
+        print(datePublished)
         let recipe = Recipe(name: name, image: "", description: description, ingredients: ingredients, directions: directions, category:selectedCategory.rawValue, datePublished: "")
         recipesVM.addRecipe(recipe: recipe)
     }
