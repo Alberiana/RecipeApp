@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E00226B28F81FCD00955384 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 0E00226A28F81FCD00955384 /* SQLite */; };
-		0E00226D28F82AB200955384 /* SQLiteCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00226C28F82AB200955384 /* SQLiteCommands.swift */; };
-		0E00226E28F82AB200955384 /* SQLiteCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E00226C28F82AB200955384 /* SQLiteCommands.swift */; };
 		0E2691ED28F6C7DE00CCFB47 /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2691EC28F6C7DE00CCFB47 /* RecipeCard.swift */; };
 		0E2691EE28F6C7DE00CCFB47 /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2691EC28F6C7DE00CCFB47 /* RecipeCard.swift */; };
 		0E2691F028F6ECE900CCFB47 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2691EF28F6ECE900CCFB47 /* UserModel.swift */; };
@@ -42,8 +39,6 @@
 		0E91B5D828C4D81D00C63D59 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91B5D628C4D81D00C63D59 /* CategoryView.swift */; };
 		0E91B5DA28C4DBAC00C63D59 /* AddRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91B5D928C4DBAC00C63D59 /* AddRecipeView.swift */; };
 		0E91B5DB28C4DBAC00C63D59 /* AddRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91B5D928C4DBAC00C63D59 /* AddRecipeView.swift */; };
-		0EB58B2C28DF492F009B2389 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB58B2B28DF492F009B2389 /* Database.swift */; };
-		0EB58B2D28DF492F009B2389 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB58B2B28DF492F009B2389 /* Database.swift */; };
 		0EE0139F28C80E9100FFBF67 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0139E28C80E9100FFBF67 /* RecipesViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +60,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E00226C28F82AB200955384 /* SQLiteCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteCommands.swift; sourceTree = "<group>"; };
 		0E2691EC28F6C7DE00CCFB47 /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
 		0E2691EF28F6ECE900CCFB47 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		0E91B56828C2CBB700C63D59 /* RecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppApp.swift; sourceTree = "<group>"; };
@@ -89,7 +83,6 @@
 		0E91B5D328C4C76700C63D59 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		0E91B5D628C4D81D00C63D59 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		0E91B5D928C4DBAC00C63D59 /* AddRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeView.swift; sourceTree = "<group>"; };
-		0EB58B2B28DF492F009B2389 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		0EE0139E28C80E9100FFBF67 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E00226B28F81FCD00955384 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,9 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				0E91B5C828C415E700C63D59 /* RecipeModel.swift */,
-				0EB58B2B28DF492F009B2389 /* Database.swift */,
 				0E2691EF28F6ECE900CCFB47 /* UserModel.swift */,
-				0E00226C28F82AB200955384 /* SQLiteCommands.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -264,7 +254,6 @@
 			);
 			name = "RecipeApp (iOS)";
 			packageProductDependencies = (
-				0E00226A28F81FCD00955384 /* SQLite */,
 			);
 			productName = "RecipeApp (iOS)";
 			productReference = 0E91B56F28C2CBB900C63D59 /* RecipeApp.app */;
@@ -360,7 +349,6 @@
 			);
 			mainGroup = 0E91B56228C2CBB700C63D59;
 			packageReferences = (
-				0E00226928F81FCD00955384 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
 			);
 			productRefGroup = 0E91B57028C2CBB900C63D59 /* Products */;
 			projectDirPath = "";
@@ -462,14 +450,12 @@
 				0E91B5DA28C4DBAC00C63D59 /* AddRecipeView.swift in Sources */,
 				0E91B5B628C2D6C300C63D59 /* CategoriesView.swift in Sources */,
 				0E91B5BC28C2D6E500C63D59 /* FavoritesView.swift in Sources */,
-				0E00226D28F82AB200955384 /* SQLiteCommands.swift in Sources */,
 				0E91B5C428C2DA7300C63D59 /* TabBar.swift in Sources */,
 				0E91B5D728C4D81D00C63D59 /* CategoryView.swift in Sources */,
 				0E91B5D428C4C76700C63D59 /* RecipeView.swift in Sources */,
 				0E91B5D128C4969800C63D59 /* RecipeList.swift in Sources */,
 				0E91B5B328C2D6B300C63D59 /* HomeView.swift in Sources */,
 				0E91B59228C2CBB900C63D59 /* ContentView.swift in Sources */,
-				0EB58B2C28DF492F009B2389 /* Database.swift in Sources */,
 				0EE0139F28C80E9100FFBF67 /* RecipesViewModel.swift in Sources */,
 				0E91B59028C2CBB900C63D59 /* RecipeAppApp.swift in Sources */,
 				0E91B5C928C415E700C63D59 /* RecipeModel.swift in Sources */,
@@ -491,11 +477,9 @@
 				0E91B5D528C4C76700C63D59 /* RecipeView.swift in Sources */,
 				0E91B5D228C4969800C63D59 /* RecipeList.swift in Sources */,
 				0E2691F128F6ECE900CCFB47 /* UserModel.swift in Sources */,
-				0E00226E28F82AB200955384 /* SQLiteCommands.swift in Sources */,
 				0E91B5B428C2D6B300C63D59 /* HomeView.swift in Sources */,
 				0E91B59328C2CBB900C63D59 /* ContentView.swift in Sources */,
 				0E91B59128C2CBB900C63D59 /* RecipeAppApp.swift in Sources */,
-				0EB58B2D28DF492F009B2389 /* Database.swift in Sources */,
 				0E91B5CA28C415E700C63D59 /* RecipeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -880,25 +864,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		0E00226928F81FCD00955384 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		0E00226A28F81FCD00955384 /* SQLite */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E00226928F81FCD00955384 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
-			productName = SQLite;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E91B56328C2CBB700C63D59 /* Project object */;
 }
