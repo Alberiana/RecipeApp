@@ -29,7 +29,7 @@ And in last view you can see favorites recipes.
 
 
 
-### Tools used:
+### Used tools:
 ```
 Editor: XCode 13.3
 Programming language: Swift
